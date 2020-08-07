@@ -1,0 +1,32 @@
+number = {}
+value = 0
+choice = ""
+
+while (True):
+
+    value = input("1.input number\n2.find number\n3.end\n")
+    check=value.isnumeric()
+    value = int(value)
+    if ((check is not True) or (0<value<4) is False) :
+        print("wrong input")
+    else:
+        if value == 2:
+            name = input("enter name\n")
+            if name not in number:
+                print("not found")
+            else:
+                print(number[name])
+
+        elif value == 1:
+            name = input("Name: ")
+            number[name] = int(input("enter number"))
+        elif value == 3:
+            name = input("thankyou ")
+            break
+
+
+
+
+
+
+
